@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: CALIBRI;
+    src: url(fonts/CALIBRI.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--bgColor);
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+:root {
+    --colorText: #FFD7B6;
+    --colorText1: #fff;
+    --colorText2: #F3DFAF;
+    --colorText3: #FFA15A;
+    --colorText4: #5FCEFF;
+    --bgColor: #0B082B;
+    --bgColor2: linear-gradient(90deg, #20355B 0%, #304381 33.33%, #304381 66.67%, #20355B 100%);
+    --bgColor3: linear-gradient(90deg, #CD603B 0%, #A23037 100%);
+    --bgColor4: #344E87;
+    --bgColor5: #173C72;
+    --boxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header-container {
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.trade-logistics-container {
+    margin: 2rem auto;
+}
+
+
+.heading-text {
+    font-size: 2rem;
+    color: var(--colorText);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.paragraph-text {
+    font-size: 1.2rem;
+    color: var(--colorText1);
+    text-indent: 1.8rem;
+    margin: 5px auto;
+}
+
+/* section : object container */
+.objective-container {
+    margin: 2rem auto;
+}
+
+.text-container {
+    width: 100%;
+    height: 40px;
+    background: var(--bgColor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #D57E3A 0%, #DEB33F 100%);
+    border-image-slice: 1;
+
+}
+
+.heading-text-style {
+    font-size: 2rem;
+    color: var(--colorText1);
+}
+
+
+.objective-list-container {
+    margin: 1.5rem auto;
+}
+
+.objective-list-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    margin: 0.4rem auto;
+}
+
+.objective-list-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    pointer-events: none;
+
+}
+
+
+.img-asset {
+    width: 70px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.paragraph-objective-text {
+    font-size: 1.2rem;
+    color: var(--colorText1);
+}
+
+
+/* section: topics container */
+.topics-list-container {
+    margin: 1rem auto;
+}
+
+
+.topics-text-title {
+    font-size: 1.3rem;
+    color: var(--colorText1);
+    text-align: center;
+    margin: 1.5rem auto;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background: var(--bgColor3);
+    box-shadow: var(--boxShadow);
+    font-family: CALIBRI;
+}
+
+.text-time {
+    color: var(--colorText1);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    font-family: CALIBRI;
+}
+
+.topics-text {
+    border-bottom: 3px solid transparent;
+    border-image: var(--bgColor3);
+    border-image-slice: 1;
+    padding: 0.8rem 0;
+
+}
+
+.paragraph-text-time {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--colorText2);
+}
+
+.topics-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topics-img img {
+    margin-right: 1rem;
+    pointer-events: none;
+}
+
+.topics-item {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+}
+
+
+/* section: register now */
+.register-now-container {
+    margin: 1.5rem auto;
+
+}
+
+.register-now-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.date-text {
+    font-size: 1.5rem;
+    color: var(--colorText1);
+    text-align: center;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background: var(--bgColor4);
+    box-shadow: var(--boxShadow);
+    margin: 1rem 0;
+    font-family: CALIBRI;
+}
+
+.paragraph-date-text {
+    font-size: 1.2rem;
+    color: var(--colorText1);
+    font-family: CALIBRI;
+    font-weight: 500;
+}
+
+.date-text-sub-title {
+    color: var(--colorText3);
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.paragraph-date-text-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--colorText1);
+    margin: 0.8rem 0;
+}
+
+.paragraph-date-text-2 img {
+    margin-right: 0.8rem;
+}
+
+.paragraph-date-text-3 {
+    font-size: 0.85rem;
+    color: var(--colorText4);
+    margin: 0.8rem 0;
+}
+
+hr.hr-style {
+    background-image: linear-gradient(89.93deg, #3769A1 0.06%, #597A87 22.13%, #E8BD3F 37.25%, #CF5E37 49.97%, #E8BD3F 64.79%, #3769A1 81.12%);
+    border: 0;
+    height: 3px;
+}
+
+.register-footer {
+    text-align: center;
+}
+
+a.btn-register-now {
+    margin: 2rem auto;
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    background: var(--bgColor3);
+    color: var(--colorText1);
+    box-shadow: var(--boxShadow);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a.btn-register-now:hover {
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.footer-container {
+    max-width: 960px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--bgColor5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-footer {
+    text-align: center;
+    color: var(--colorText1);
+    font-size: 1rem;
+    font-family: CALIBRI;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+
+@media screen and (max-width:1024px) {
+    .header-container, .container, .footer-container {
+        max-width: 100%;
+    }
+
+    .trade-logistics-container, .objective-container, .agenda-container, .register-now-container {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .trade-logistics-container, .objective-container, .agenda-container, .register-now-container {
+        padding: 1.2rem;
+    }
+
+    .topics-text-title, .date-text {
+        width: 100%;
+    }
+
+    .topics-item {
+        grid-template-columns: auto;
+    }
+
+    .topics-img img {
+        margin: 0.5rem;
+    }
+}
